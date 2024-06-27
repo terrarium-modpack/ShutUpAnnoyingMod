@@ -1,0 +1,17 @@
+{
+  "compatibilityLevel": "JAVA_${java_version}",
+  "required": true,
+  "package": "com.github.amyavi.shutupannoyingmod.mixin",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "porting_lib.missing_model_loader.BlockModelDeserializerMixinMixin",
+    "vanilla.missing_textures_in_model.ModelManagerMixin"
+  ],
+  "mixins": [
+    "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
+    "porting_lib.config_changes.ModConfigSpecMixin",
+    "vanilla.recipe_unknown_item.RecipeManagerMixin"
+  ]
+}

@@ -1,0 +1,20 @@
+[versions]
+java = "17"
+minecraft = "1.20.1"
+fabric-loader = "0.15.11"
+fabric-loom = "1.7-SNAPSHOT"
+mixinsquared = "0.2.0-beta.5"
+
+forgeconfigapiport = "8.0.0"
+portinglib = "2.3.4+1.20.1"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+
+forgeconfigapiport = { module = "fuzs.forgeconfigapiport:forgeconfigapiport-fabric", version.ref = "forgeconfigapiport" }
+portinglib-config = { module = "io.github.fabricators_of_create.Porting-Lib:config", version.ref = "portinglib" }
+portinglib-model-loader = { module = "io.github.fabricators_of_create.Porting-Lib:model_loader", version.ref = "portinglib" }
+
+[plugins]
+fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }

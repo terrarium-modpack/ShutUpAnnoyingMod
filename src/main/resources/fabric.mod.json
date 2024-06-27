@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "shutupannoyingmod",
+  "version": "${version}",
+
+  "name": "Shut Up Annoying Mod",
+  "description": "Fixes annoying log spam caused by mods.\nBreaks every rule of the geneva convention.",
+  "authors": ["amyavi"],
+  "license": "Unlicense",
+  "icon": "assets/shutupannoyingmod/icon.png",
+  "mixins": ["shutupannoyingmod.mixins.json"],
+
+  "depends": {
+      "java": ">=${java_version}",
+      "fabricloader": ">=${loader_version}"
+  }
+}
