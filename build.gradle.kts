@@ -30,6 +30,7 @@ dependencies {
 
     modImplementation(libs.buildingwands)
     modImplementation(libs.forgeconfigapiport)
+    modImplementation(libs.fwaystones)
     modImplementation(libs.portinglib.config)
     modImplementation(libs.portinglib.model.loader)
 }

@@ -13,6 +13,8 @@
     "building_wands.useless_logs.PlayerWandMixin",
     "building_wands.useless_logs.WandsModMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
+    "fwaystones.quiet_village_worldgen.UtilsMixin",
+    "fwaystones.quiet_village_worldgen.WaystonesWorldgenMixin",
     "porting_lib.config_changes.ModConfigSpecMixin",
     "vanilla.recipe_unknown.RecipeManagerMixin"
   ]

@@ -16,6 +16,7 @@ public abstract class PlayerWandMixin {
     private static void add_playerLog(final String s, final boolean b, final Operation<Void> original) {
         // Do nothing
     }
+
     @WrapOperation(
             method = "remove_player", remap = false,
             at = @At(value = "INVOKE", target = "Lnet/nicguzzo/wands/WandsMod;log(Ljava/lang/String;Z)V", remap = false),

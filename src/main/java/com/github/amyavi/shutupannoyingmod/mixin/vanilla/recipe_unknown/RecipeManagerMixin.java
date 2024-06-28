@@ -15,7 +15,7 @@ public abstract class RecipeManagerMixin {
             at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;error(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", remap = false)
     )
     private boolean ignoreUnknown(final Logger instance, final String s, final Object o, final Object o2,
-                                      final @Local(ordinal = 0) RuntimeException exception) {
+                                  final @Local(ordinal = 0) RuntimeException exception) {
         if (!(exception instanceof final JsonSyntaxException syntaxException)) return true;
 
         return !syntaxException.getMessage().startsWith("Unknown item '")
