@@ -14,6 +14,6 @@
     "building_wands.useless_logs.WandsModMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "porting_lib.config_changes.ModConfigSpecMixin",
-    "vanilla.recipe_unknown_item.RecipeManagerMixin"
+    "vanilla.recipe_unknown.RecipeManagerMixin"
   ]
 }
