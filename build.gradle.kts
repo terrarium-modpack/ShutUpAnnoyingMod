@@ -10,6 +10,11 @@ repositories {
     maven("https://mvn.devos.one/releases/")
     maven("https://jitpack.io")
     maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
+
+    exclusiveContent {
+        forRepository { maven("https://api.modrinth.com/maven") }
+        filter { includeGroup("maven.modrinth") }
+    }
 }
 
 dependencies {
@@ -23,6 +28,7 @@ dependencies {
         version = libs.versions.mixinsquared.get()
     ))!!)
 
+    modImplementation(libs.buildingwands)
     modImplementation(libs.forgeconfigapiport)
     modImplementation(libs.portinglib.config)
     modImplementation(libs.portinglib.model.loader)
