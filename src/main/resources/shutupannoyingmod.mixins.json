@@ -2,6 +2,7 @@
   "compatibilityLevel": "JAVA_${java_version}",
   "required": true,
   "package": "com.github.amyavi.shutupannoyingmod.mixin",
+  "plugin": "com.github.amyavi.shutupannoyingmod.mixin.ShutUpAnnoyingModMixinPlugin",
   "injectors": {
     "defaultRequire": 1
   },

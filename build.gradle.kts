@@ -28,11 +28,11 @@ dependencies {
         version = libs.versions.mixinsquared.get()
     ))!!)
 
-    modImplementation(libs.buildingwands)
-    modImplementation(libs.forgeconfigapiport)
-    modImplementation(libs.fwaystones)
-    modImplementation(libs.portinglib.config)
-    modImplementation(libs.portinglib.model.loader)
+    modCompileOnly(libs.buildingwands)
+    modCompileOnly(libs.forgeconfigapiport)
+    modCompileOnly(libs.fwaystones)
+    modCompileOnly(libs.portinglib.config)
+    modCompileOnly(libs.portinglib.model.loader)
 }
 
 tasks.processResources {
