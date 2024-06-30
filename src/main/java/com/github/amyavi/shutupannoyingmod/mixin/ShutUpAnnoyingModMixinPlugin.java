@@ -12,6 +12,7 @@ import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Set;
 
@@ -33,8 +34,12 @@ public final class ShutUpAnnoyingModMixinPlugin implements IMixinConfigPlugin {
             return false;
         }
 
-        try {
-            final ClassReader classReader = new ClassReader(mixinClassName);
+        final String mixinPath = mixinClassName.replace('.', '/') + ".class";
+        try (final InputStream resource = ShutUpAnnoyingModMixinPlugin.class
+                .getClassLoader().getResourceAsStream(mixinPath)) {
+            if (resource == null) throw new NullPointerException("resource was null");
+
+            final ClassReader classReader = new ClassReader(resource);
             final ClassNode classNode = new ClassNode();
             classReader.accept(classNode,
                     ClassReader.SKIP_CODE | ClassReader.SKIP_DEBUG | ClassReader.SKIP_FRAMES);
