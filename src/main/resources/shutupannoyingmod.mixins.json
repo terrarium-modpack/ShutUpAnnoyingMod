@@ -7,6 +7,7 @@
     "defaultRequire": 1
   },
   "client": [
+    "gliders.overlapping_control.ClientUtilMixin",
     "porting_lib.missing_model_loader.BlockModelDeserializerMixinMixin",
     "vanilla.missing_textures_in_model.ModelManagerMixin"
   ],

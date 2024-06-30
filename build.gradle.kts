@@ -31,6 +31,7 @@ dependencies {
     modCompileOnly(libs.buildingwands)
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
+    modCompileOnly(libs.gliders)
     modCompileOnly(libs.portinglib.config)
     modCompileOnly(libs.portinglib.model.loader)
 }
