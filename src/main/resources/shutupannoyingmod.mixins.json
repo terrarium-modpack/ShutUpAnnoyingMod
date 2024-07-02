@@ -14,6 +14,7 @@
   "mixins": [
     "building_wands.useless_logs.PlayerWandMixin",
     "building_wands.useless_logs.WandsModMixin",
+    "forgeconfigapiport.config_changes.ConfigFileTypeHandlerMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",
     "fwaystones.quiet_village_worldgen.WaystonesWorldgenMixin",
