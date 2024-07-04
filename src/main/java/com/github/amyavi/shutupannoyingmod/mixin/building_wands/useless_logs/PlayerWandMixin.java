@@ -11,14 +11,14 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(PlayerWand.class)
 public abstract class PlayerWandMixin {
     @WrapOperation(
-            method = "add_player",
+            method = "add_player", remap = false,
             at = @At(value = "INVOKE", target = "Lnet/nicguzzo/wands/WandsMod;log(Ljava/lang/String;Z)V", remap = false)
     )
     private static void add_playerLog(final String s, final boolean b, final Operation<Void> original) {
     }
 
     @WrapOperation(
-            method = "remove_player",
+            method = "remove_player", remap = false,
             at = @At(value = "INVOKE", target = "Lnet/nicguzzo/wands/WandsMod;log(Ljava/lang/String;Z)V", remap = false)
     )
     private static void remove_playerLog(final String s, final boolean b, final Operation<Void> original) {

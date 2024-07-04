@@ -12,21 +12,21 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(WandsMod.class)
 public abstract class WandsModMixin {
     @WrapOperation(
-            method = "lambda$init$25",
+            method = "lambda$init$25", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/apache/logging/log4j/Logger;info(Ljava/lang/String;)V", remap = false)
     )
     private static void lambda25Info(final Logger instance, final String s, final Operation<Void> original) {
     }
 
     @WrapOperation(
-            method = "lambda$init$22",
+            method = "lambda$init$22", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/apache/logging/log4j/Logger;error(Ljava/lang/String;)V", remap = false)
     )
     private static void lambda22Error(final Logger instance, final String s, final Operation<Void> original) {
     }
 
     @WrapOperation(
-            method = "lambda$init$22",
+            method = "lambda$init$22", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/apache/logging/log4j/Logger;info(Ljava/lang/String;)V", remap = false)
     )
     private static void lambda22Info(final Logger instance, final String s, final Operation<Void> original) {

@@ -7,6 +7,8 @@
     "defaultRequire": 1
   },
   "client": [
+    "itemcollectors.immediatelyfast_crash.ItemCollectorsClientMixin",
+    "itemcollectors.immediatelyfast_crash.RenderUtilsAccessor",
     "gliders.overlapping_control.ClientUtilMixin",
     "porting_lib.missing_model_loader.BlockModelDeserializerMixinMixin",
     "vanilla.missing_textures_in_model.ModelManagerMixin"
