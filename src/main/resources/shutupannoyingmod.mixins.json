@@ -16,6 +16,7 @@
   "mixins": [
     "building_wands.useless_logs.PlayerWandMixin",
     "building_wands.useless_logs.WandsModMixin",
+    "cctweaked.config_changes.FabricConfigFileMixin",
     "cctweaked.global_server_config.ComputerCraftMixin",
     "forgeconfigapiport.config_changes.ConfigFileTypeHandlerMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
