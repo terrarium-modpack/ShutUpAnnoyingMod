@@ -6,6 +6,7 @@ fabric-loom = "1.7-SNAPSHOT"
 mixinsquared = "0.2.0-beta.5"
 
 buildingwands = "2.6.9_release_fabric_1.20.1"
+cctweaked = "MlxrTZqO"
 forgeconfigapiport = "8.0.0"
 fwaystones = "3.3.2+mc1.20.1"
 gliders = "1.1.5+fabric"
@@ -18,6 +19,7 @@ minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
 
 buildingwands = { module = "maven.modrinth:building-wands", version.ref = "buildingwands" }
+cctweaked = { module = "maven.modrinth:cc-tweaked", version.ref = "cctweaked" }
 forgeconfigapiport = { module = "fuzs.forgeconfigapiport:forgeconfigapiport-fabric", version.ref = "forgeconfigapiport" }
 fwaystones = { module = "maven.modrinth:fwaystones", version.ref = "fwaystones" }
 gliders = { module = "maven.modrinth:gliders", version.ref = "gliders" }
