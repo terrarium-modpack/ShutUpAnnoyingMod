@@ -30,6 +30,7 @@ dependencies {
 
     modCompileOnly(libs.buildingwands)
     modCompileOnly(libs.cctweaked)
+    modCompileOnly(libs.enchantedverticalslabs)
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
     modCompileOnly(libs.gliders)

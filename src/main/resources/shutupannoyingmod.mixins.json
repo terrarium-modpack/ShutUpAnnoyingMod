@@ -19,6 +19,7 @@
     "building_wands.useless_logs.WandsModMixin",
     "cctweaked.config_changes.FabricConfigFileMixin",
     "cctweaked.global_server_config.ComputerCraftMixin",
+    "enchanted_vertical_slabs.vmp_crash.CombinableVerticalSlabBlockMixin",
     "forgeconfigapiport.config_changes.ConfigFileTypeHandlerMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",
