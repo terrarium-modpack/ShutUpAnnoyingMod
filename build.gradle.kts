@@ -9,7 +9,6 @@ group = project.property("maven_group")!!
 repositories {
     maven("https://mvn.devos.one/releases/")
     maven("https://jitpack.io")
-    maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
 
     exclusiveContent {
         forRepository { maven("https://api.modrinth.com/maven") }
@@ -22,6 +21,7 @@ dependencies {
     mappings(loom.officialMojangMappings())
 
     modImplementation(libs.fabric.loader)
+    modImplementation(libs.fabric.api)
     include(implementation(annotationProcessor( // stupidest shit i've ever done
         group = "com.github.bawnorton.mixinsquared",
         name = "mixinsquared-fabric",
