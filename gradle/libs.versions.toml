@@ -12,9 +12,14 @@ enchantedverticalslabs = "1.9.1"
 forgeconfigapiport = "v8.0.0-1.20.1-Fabric"
 fwaystones = "3.3.2+mc1.20.1"
 gliders = "1.1.5+fabric"
-itemcollectors = "1.1.10-fabric-mc1.20"
 portinglib = "2.3.4+1.20.1"
+
+itemcollectors = "1.1.10-fabric-mc1.20"
 supermartijn642core = "1.1.17-fabric-mc1.20.1"
+
+jadeaddons = "5.2.5"
+jade = "11.10.0+fabric"
+lootr = "0.7.33.81"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -27,10 +32,15 @@ enchantedverticalslabs = { module = "maven.modrinth:enchanted-vertical-slabs", v
 forgeconfigapiport = { module = "maven.modrinth:forge-config-api-port", version.ref = "forgeconfigapiport" }
 fwaystones = { module = "maven.modrinth:fwaystones", version.ref = "fwaystones" }
 gliders = { module = "maven.modrinth:gliders", version.ref = "gliders" }
-itemcollectors = { module = "maven.modrinth:item-collectors", version.ref = "itemcollectors" }
 portinglib-config = { module = "io.github.fabricators_of_create.Porting-Lib:config", version.ref = "portinglib" }
 portinglib-model-loader = { module = "io.github.fabricators_of_create.Porting-Lib:model_loader", version.ref = "portinglib" }
+
+itemcollectors = { module = "maven.modrinth:item-collectors", version.ref = "itemcollectors" }
 supermartijn642core = { module = "maven.modrinth:supermartijn642s-core-lib", version.ref = "supermartijn642core" }
+
+jadeaddons = { module = "maven.modrinth:jade-addons-fabric", version.ref = "jadeaddons" }
+jade = { module = "maven.modrinth:jade", version.ref = "jade" }
+lootr = { module = "maven.modrinth:lootr", version.ref = "lootr" }
 
 [plugins]
 fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }

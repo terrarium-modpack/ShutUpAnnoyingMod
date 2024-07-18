@@ -24,9 +24,9 @@
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",
     "fwaystones.quiet_village_worldgen.WaystonesWorldgenMixin",
+    "jadeaddons.lootr_fix.LootrPluginMixin",
     "porting_lib.config_changes.ModConfigSpecMixin",
     "simplyswords.ServerAdvancementManagerMixin",
-    "terralith.intro_message.ServerFunctionLibraryMixin",
     "vanilla.recipe_unknown.RecipeManagerMixin"
   ]
 }

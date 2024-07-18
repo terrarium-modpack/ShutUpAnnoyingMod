@@ -34,10 +34,15 @@ dependencies {
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
     modCompileOnly(libs.gliders)
-    modCompileOnly(libs.itemcollectors)
     modCompileOnly(libs.portinglib.config)
     modCompileOnly(libs.portinglib.model.loader)
+
+    modCompileOnly(libs.itemcollectors)
     modCompileOnly(libs.supermartijn642core)
+
+    modCompileOnly(libs.jadeaddons)
+    modCompileOnly(libs.jade)
+    modCompileOnly(libs.lootr)
 }
 
 tasks.processResources {
