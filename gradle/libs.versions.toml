@@ -21,6 +21,10 @@ jadeaddons = "5.2.5"
 jade = "11.10.0+fabric"
 lootr = "0.7.33.81"
 
+appbot = "1.5.0-fabric"
+botania = "1.20.1-445-fabric"
+emi = "1.1.10+1.20.1+fabric"
+
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
@@ -41,6 +45,10 @@ supermartijn642core = { module = "maven.modrinth:supermartijn642s-core-lib", ver
 jadeaddons = { module = "maven.modrinth:jade-addons-fabric", version.ref = "jadeaddons" }
 jade = { module = "maven.modrinth:jade", version.ref = "jade" }
 lootr = { module = "maven.modrinth:lootr", version.ref = "lootr" }
+
+appbot = { module = "maven.modrinth:applied-botanics", version.ref = "appbot" }
+botania = { module = "maven.modrinth:botania", version.ref = "botania" }
+emi = { module = "maven.modrinth:emi", version.ref = "emi" }
 
 [plugins]
 fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }

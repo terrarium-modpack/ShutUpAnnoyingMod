@@ -43,6 +43,10 @@ dependencies {
     modCompileOnly(libs.jadeaddons)
     modCompileOnly(libs.jade)
     modCompileOnly(libs.lootr)
+
+    modCompileOnly(libs.appbot)
+    modCompileOnly(libs.botania)
+    modCompileOnly(libs.emi)
 }
 
 tasks.processResources {
