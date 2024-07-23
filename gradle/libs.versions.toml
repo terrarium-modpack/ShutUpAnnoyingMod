@@ -17,10 +17,6 @@ portinglib = "2.3.4+1.20.1"
 itemcollectors = "1.1.10-fabric-mc1.20"
 supermartijn642core = "1.1.17-fabric-mc1.20.1"
 
-jadeaddons = "5.2.5"
-jade = "11.10.0+fabric"
-lootr = "0.7.33.81"
-
 appbot = "1.5.0-fabric"
 botania = "1.20.1-445-fabric"
 emi = "1.1.10+1.20.1+fabric"
@@ -41,10 +37,6 @@ portinglib-model-loader = { module = "io.github.fabricators_of_create.Porting-Li
 
 itemcollectors = { module = "maven.modrinth:item-collectors", version.ref = "itemcollectors" }
 supermartijn642core = { module = "maven.modrinth:supermartijn642s-core-lib", version.ref = "supermartijn642core" }
-
-jadeaddons = { module = "maven.modrinth:jade-addons-fabric", version.ref = "jadeaddons" }
-jade = { module = "maven.modrinth:jade", version.ref = "jade" }
-lootr = { module = "maven.modrinth:lootr", version.ref = "lootr" }
 
 appbot = { module = "maven.modrinth:applied-botanics", version.ref = "appbot" }
 botania = { module = "maven.modrinth:botania", version.ref = "botania" }
