@@ -8,7 +8,6 @@ mixinsquared = "0.2.0-beta.5"
 
 buildingwands = "2.6.9_release_fabric_1.20.1"
 cctweaked = "MlxrTZqO"
-enchantedverticalslabs = "1.9.1"
 forgeconfigapiport = "v8.0.0-1.20.1-Fabric"
 fwaystones = "3.3.2+mc1.20.1"
 gliders = "1.1.5+fabric"
@@ -28,7 +27,6 @@ fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fab
 
 buildingwands = { module = "maven.modrinth:building-wands", version.ref = "buildingwands" }
 cctweaked = { module = "maven.modrinth:cc-tweaked", version.ref = "cctweaked" }
-enchantedverticalslabs = { module = "maven.modrinth:enchanted-vertical-slabs", version.ref = "enchantedverticalslabs"}
 forgeconfigapiport = { module = "maven.modrinth:forge-config-api-port", version.ref = "forgeconfigapiport" }
 fwaystones = { module = "maven.modrinth:fwaystones", version.ref = "fwaystones" }
 gliders = { module = "maven.modrinth:gliders", version.ref = "gliders" }
