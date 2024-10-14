@@ -29,6 +29,7 @@ dependencies {
     ))!!)
 
     modCompileOnly(libs.cctweaked)
+    modCompileOnly(libs.createdeco)
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
     modCompileOnly(libs.modonomicon)

@@ -17,6 +17,7 @@
   "mixins": [
     "cctweaked.config_changes.FabricConfigFileMixin",
     "cctweaked.global_server_config.ComputerCraftMixin",
+    "createdeco.remove_placard_log.BlockRegistryMixin",
     "forgeconfigapiport.config_changes.ConfigFileTypeHandlerMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",

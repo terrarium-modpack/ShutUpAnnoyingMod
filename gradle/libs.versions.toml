@@ -7,6 +7,7 @@ fabric-api = "0.92.2+1.20.1"
 mixinsquared = "0.2.0"
 
 cctweaked = "Zoo9N9Dv"
+createdeco = "2.0.2-1.20.1-fabric"
 forgeconfigapiport = "v8.0.0-1.20.1-Fabric"
 fwaystones = "3.3.2+mc1.20.1"
 modonomicon = "FTIG4vr7"
@@ -25,6 +26,7 @@ fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-l
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
 
 cctweaked = { module = "maven.modrinth:cc-tweaked", version.ref = "cctweaked" }
+createdeco = { module = "maven.modrinth:create-deco", version.ref = "createdeco" }
 forgeconfigapiport = { module = "maven.modrinth:forge-config-api-port", version.ref = "forgeconfigapiport" }
 fwaystones = { module = "maven.modrinth:fwaystones", version.ref = "fwaystones" }
 modonomicon = { module = "maven.modrinth:modonomicon", version.ref = "modonomicon" }
