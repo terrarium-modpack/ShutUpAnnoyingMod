@@ -8,6 +8,7 @@
   "authors": ["amyavi"],
   "license": "Unlicense",
   "icon": "assets/shutupannoyingmod/icon.png",
+
   "mixins": ["shutupannoyingmod.mixins.json"],
 
   "depends": {

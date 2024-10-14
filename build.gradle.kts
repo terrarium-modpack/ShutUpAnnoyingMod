@@ -3,17 +3,18 @@ plugins {
     alias(libs.plugins.fabric.loom)
 }
 
-version = project.property("mod_version")!!
-group = project.property("maven_group")!!
+version = project.property("version")!!
+group = project.property("group")!!
 
 repositories {
-    maven("https://mvn.devos.one/releases/")
-    maven("https://jitpack.io")
-
     exclusiveContent {
         forRepository { maven("https://api.modrinth.com/maven") }
         filter { includeGroup("maven.modrinth") }
     }
+
+    maven("https://mvn.devos.one/releases/")
+    maven("https://jitpack.io")
+    maven("https://maven.bawnorton.com")
 }
 
 dependencies {
@@ -28,11 +29,9 @@ dependencies {
         version = libs.versions.mixinsquared.get()
     ))!!)
 
-    modCompileOnly(libs.buildingwands)
     modCompileOnly(libs.cctweaked)
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
-    modCompileOnly(libs.gliders)
     modCompileOnly(libs.portinglib.config)
     modCompileOnly(libs.portinglib.model.loader)
 
