@@ -13,8 +13,7 @@ repositories {
     }
 
     maven("https://mvn.devos.one/releases/")
-    maven("https://jitpack.io")
-    maven("https://maven.bawnorton.com")
+    maven("https://maven.bawnorton.com/releases/")
 }
 
 dependencies {
@@ -32,8 +31,8 @@ dependencies {
     modCompileOnly(libs.cctweaked)
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
-    modCompileOnly(libs.portinglib.config)
-    modCompileOnly(libs.portinglib.model.loader)
+    modCompileOnly(libs.portinglib.config) { isTransitive = false }
+    modCompileOnly(libs.portinglib.model.loader) { isTransitive = false }
 
     modCompileOnly(libs.itemcollectors)
     modCompileOnly(libs.supermartijn642core)
