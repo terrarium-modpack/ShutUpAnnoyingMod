@@ -9,6 +9,7 @@ mixinsquared = "0.2.0"
 cctweaked = "Zoo9N9Dv"
 forgeconfigapiport = "v8.0.0-1.20.1-Fabric"
 fwaystones = "3.3.2+mc1.20.1"
+modonomicon = "FTIG4vr7"
 portinglib = "2.3.4+1.20.1"
 
 itemcollectors = "1.1.10-fabric-mc1.20"
@@ -26,6 +27,7 @@ fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fab
 cctweaked = { module = "maven.modrinth:cc-tweaked", version.ref = "cctweaked" }
 forgeconfigapiport = { module = "maven.modrinth:forge-config-api-port", version.ref = "forgeconfigapiport" }
 fwaystones = { module = "maven.modrinth:fwaystones", version.ref = "fwaystones" }
+modonomicon = { module = "maven.modrinth:modonomicon", version.ref = "modonomicon" }
 portinglib-config = { module = "io.github.fabricators_of_create.Porting-Lib:config", version.ref = "portinglib" }
 portinglib-model-loader = { module = "io.github.fabricators_of_create.Porting-Lib:model_loader", version.ref = "portinglib" }
 

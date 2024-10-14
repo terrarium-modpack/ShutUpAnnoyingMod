@@ -31,6 +31,7 @@ dependencies {
     modCompileOnly(libs.cctweaked)
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
+    modCompileOnly(libs.modonomicon)
     modCompileOnly(libs.portinglib.config) { isTransitive = false }
     modCompileOnly(libs.portinglib.model.loader) { isTransitive = false }
 

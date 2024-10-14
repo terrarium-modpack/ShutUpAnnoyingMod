@@ -21,6 +21,7 @@
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",
     "fwaystones.quiet_village_worldgen.WaystonesWorldgenMixin",
+    "modonomicon.remove_creative_tab.ModonomiconFabricMixin",
     "porting_lib.config_changes.ModConfigSpecMixin",
     "vanilla.recipe_unknown.RecipeManagerMixin"
   ]
