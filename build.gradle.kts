@@ -13,7 +13,11 @@ repositories {
     }
 
     maven("https://mvn.devos.one/releases/")
+    maven("https://mvn.devos.one/snapshots/")
     maven("https://maven.bawnorton.com/releases/")
+
+    mavenLocal() // estrogen not released yet
+    maven("https://maven.teamresourceful.com/repository/maven-public/")
 }
 
 dependencies {
@@ -35,6 +39,10 @@ dependencies {
     modCompileOnly(libs.modonomicon)
     modCompileOnly(libs.portinglib.config) { isTransitive = false }
     modCompileOnly(libs.portinglib.model.loader) { isTransitive = false }
+
+    modCompileOnly(libs.create) { isTransitive = false } // :(
+    modCompileOnly(libs.estrogen) { isTransitive = false }
+    modCompileOnly(libs.resourcefulcosmetics) { isTransitive = false }
 
     modCompileOnly(libs.itemcollectors)
     modCompileOnly(libs.supermartijn642core)

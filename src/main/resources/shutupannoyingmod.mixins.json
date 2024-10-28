@@ -8,6 +8,10 @@
   },
   "client": [
     "appbot.broken_emi_integration.ABEMIPluginMixin",
+    "estrogen.destroy_cosmetics.EstrogenClientCommandsMixin",
+    "estrogen.destroy_cosmetics.EstrogenClientMixin",
+    "estrogen.destroy_cosmetics.EstrogenConfigScreenMixin",
+    "estrogen.destroy_cosmetics.MinecraftClientMixinMixin",
     "itemcollectors.immediatelyfast_crash.ItemCollectorsClientMixin",
     "itemcollectors.immediatelyfast_crash.RenderUtilsAccessor",
     "porting_lib.missing_model_loader.BlockModelDeserializerMixinMixin",
@@ -18,12 +22,14 @@
     "cctweaked.config_changes.FabricConfigFileMixin",
     "cctweaked.global_server_config.ComputerCraftMixin",
     "createdeco.remove_placard_log.BlockRegistryMixin",
+    "estrogen.destroy_cosmetics.EstrogenRendererMixin",
     "forgeconfigapiport.config_changes.ConfigFileTypeHandlerMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",
     "fwaystones.quiet_village_worldgen.WaystonesWorldgenMixin",
     "modonomicon.remove_creative_tab.ModonomiconFabricMixin",
     "porting_lib.config_changes.ModConfigSpecMixin",
+    "resourcefulcosmetics.noop.CosmeticsHttpMixin",
     "vanilla.recipe_unknown.RecipeManagerMixin"
   ]
 }
