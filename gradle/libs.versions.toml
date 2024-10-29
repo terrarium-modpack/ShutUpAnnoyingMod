@@ -14,7 +14,7 @@ modonomicon = "FTIG4vr7"
 portinglib = "2.3.4+1.20.1"
 
 create = "0.5.1-f-build.1417+mc1.20.1"
-estrogen = "4.3.0+1.20.1-alpha.4"
+estrogen = "4.3.0+1.20.1-alpha.6"
 resourcefulcosmetics = "1.0.4"
 
 itemcollectors = "1.1.10-fabric-mc1.20"
