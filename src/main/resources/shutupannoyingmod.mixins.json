@@ -12,7 +12,6 @@
     "estrogen.destroy_cosmetics.EstrogenClientMixin",
     "estrogen.destroy_cosmetics.EstrogenConfigScreenMixin",
     "estrogen.destroy_cosmetics.MinecraftClientMixinMixin",
-    "estrogen.dont_replace_splashes.SplashManagerMixinMixin",
     "itemcollectors.immediatelyfast_crash.ItemCollectorsClientMixin",
     "itemcollectors.immediatelyfast_crash.RenderUtilsAccessor",
     "porting_lib.missing_model_loader.BlockModelDeserializerMixinMixin",

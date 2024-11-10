@@ -16,7 +16,8 @@ repositories {
     maven("https://mvn.devos.one/snapshots/")
     maven("https://maven.bawnorton.com/releases/")
 
-    mavenLocal() // estrogen not released yet
+    // Estrogen
+    maven("https://maven.is-immensely.gay/releases/")
     maven("https://maven.teamresourceful.com/repository/maven-public/")
 }
 
