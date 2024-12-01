@@ -23,6 +23,8 @@
     "cctweaked.global_server_config.ComputerCraftMixin",
     "createdeco.remove_placard_log.BlockRegistryMixin",
     "estrogen.destroy_cosmetics.EstrogenRendererMixin",
+    "estrogen.unfreeze_server_thread.BoobHttpMixin",
+    "estrogen.unfreeze_server_thread.EstrogenEventsMixin",
     "forgeconfigapiport.config_changes.ConfigFileTypeHandlerMixin",
     "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",

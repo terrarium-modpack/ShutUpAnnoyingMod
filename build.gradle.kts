@@ -17,7 +17,8 @@ repositories {
     maven("https://maven.bawnorton.com/releases/")
 
     // Estrogen
-    maven("https://maven.is-immensely.gay/releases/")
+    mavenLocal()
+    //maven("https://maven.is-immensely.gay/releases/")
     maven("https://maven.teamresourceful.com/repository/maven-public/")
 }
 
