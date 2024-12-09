@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
 @SuppressWarnings("UnstableApiUsage")
-@RequiresMod("porting_lib")
+@RequiresMod("porting_lib_config")
 @Mixin(value = ModConfigSpec.class)
 public abstract class ModConfigSpecMixin {
     @WrapOperation(

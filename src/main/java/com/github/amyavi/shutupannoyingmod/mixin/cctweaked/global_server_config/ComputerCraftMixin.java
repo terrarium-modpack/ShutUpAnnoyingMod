@@ -16,7 +16,7 @@ import java.nio.file.Path;
 @Mixin(ComputerCraft.class)
 public abstract class ComputerCraftMixin {
     @WrapOperation(
-            method = "lambda$init$14",
+            method = "lambda$init$15",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/server/MinecraftServer;getWorldPath(Lnet/minecraft/world/level/storage/LevelResource;)Ljava/nio/file/Path;")
     )
     private static Path initGetWorldPath(final MinecraftServer instance, final LevelResource levelResource, final Operation<Path> original) {
