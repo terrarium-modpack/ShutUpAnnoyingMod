@@ -43,17 +43,24 @@ public final class ShutUpAnnoyingModMixinPlugin implements IMixinConfigPlugin {
             final ClassNode classNode = new ClassNode();
             classReader.accept(classNode,
                     ClassReader.SKIP_CODE | ClassReader.SKIP_DEBUG | ClassReader.SKIP_FRAMES);
-            for (final AnnotationNode annotation: classNode.invisibleAnnotations) {
+            for (final AnnotationNode annotation : classNode.invisibleAnnotations) {
                 if (!annotation.desc.equals(MIXIN_REQUIRES_MOD_DESC)) continue;
+
+                Object valueObject = null;
                 for (int i = 0; i < annotation.values.size(); i += 2) {
                     if (!annotation.values.get(i).equals("value")) continue;
-                    final String modId = (String)annotation.values.get(i + 1);
-                    if (modId == null) break;
+                    valueObject = annotation.values.get(i + 1);
+                    break;
+                }
 
+                if (valueObject == null) break;
+
+                //noinspection unchecked
+                final List<String> modIds = (List<String>) valueObject;
+                for (final String modId : modIds) {
                     if (!FabricLoader.getInstance().isModLoaded(modId)) {
                         return false;
                     }
-                    break;
                 }
             }
 

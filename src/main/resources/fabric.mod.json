@@ -10,6 +10,9 @@
   "icon": "assets/shutupannoyingmod/icon.png",
 
   "mixins": ["shutupannoyingmod.mixins.json"],
+  "entrypoints": {"mixinsquared": [
+    "com.github.amyavi.shutupannoyingmod.mixin.blahaj.broken_travelersbackpack_integration.BlahajMixinCanceller"
+  ]},
 
   "depends": {
       "java": ">=${java_version}",

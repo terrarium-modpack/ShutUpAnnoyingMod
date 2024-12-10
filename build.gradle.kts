@@ -38,7 +38,6 @@ dependencies {
     modCompileOnly(libs.forgeconfigapiport)
     modCompileOnly(libs.fwaystones)
     modCompileOnly(libs.portinglib.config) { isTransitive = false }
-    modCompileOnly(libs.portinglib.model.loader) { isTransitive = false }
 
     modCompileOnly(libs.create) { isTransitive = false } // :(
     modCompileOnly(libs.estrogen) { isTransitive = false }
@@ -50,6 +49,9 @@ dependencies {
     modCompileOnly(libs.appbot)
     modCompileOnly(libs.botania)
     modCompileOnly(libs.emi)
+
+    compileOnly(libs.blahaj) // do not remap or fabric-loom blows up
+    modCompileOnly(libs.travelersbackpack)
 }
 
 tasks.processResources {

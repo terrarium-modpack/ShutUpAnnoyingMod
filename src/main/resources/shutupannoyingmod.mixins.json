@@ -18,6 +18,7 @@
     "vanilla.no_flite_narrator.NarratorMixin"
   ],
   "mixins": [
+    "blahaj.broken_travelersbackpack_integration.ModItemsMixin",
     "cctweaked.config_changes.FabricConfigFileMixin",
     "cctweaked.global_server_config.ComputerCraftMixin",
     "createdeco.remove_placard_log.BlockRegistryMixin",

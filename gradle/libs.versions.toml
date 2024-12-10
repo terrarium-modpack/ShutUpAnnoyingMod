@@ -23,6 +23,9 @@ appbot = "1.5.0-fabric"
 botania = "1.20.1-446-fabric"
 emi = "1.1.18+1.20.1+fabric"
 
+blahaj = "yE3WndYJ"
+travelersbackpack = "ZHltcaKk"
+
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
@@ -33,7 +36,6 @@ createdeco = { module = "maven.modrinth:create-deco", version.ref = "createdeco"
 forgeconfigapiport = { module = "maven.modrinth:forge-config-api-port", version.ref = "forgeconfigapiport" }
 fwaystones = { module = "maven.modrinth:fwaystones", version.ref = "fwaystones" }
 portinglib-config = { module = "io.github.fabricators_of_create.Porting-Lib:config", version.ref = "portinglib" }
-portinglib-model-loader = { module = "io.github.fabricators_of_create.Porting-Lib:model_loader", version.ref = "portinglib" }
 
 create = { module = "com.simibubi.create:create-fabric-1.20.1", version.ref = "create" }
 estrogen = { module = "dev.mayaqq:Estrogen-fabric", version.ref = "estrogen" }
@@ -45,6 +47,10 @@ supermartijn642core = { module = "maven.modrinth:supermartijn642s-core-lib", ver
 appbot = { module = "maven.modrinth:applied-botanics", version.ref = "appbot" }
 botania = { module = "maven.modrinth:botania", version.ref = "botania" }
 emi = { module = "maven.modrinth:emi", version.ref = "emi" }
+
+# project link might change, use ID
+blahaj = { module = "maven.modrinth:faitfqhg", version.ref = "blahaj" }
+travelersbackpack = { module = "maven.modrinth:travelersbackpack", version.ref = "travelersbackpack" }
 
 [plugins]
 fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }
