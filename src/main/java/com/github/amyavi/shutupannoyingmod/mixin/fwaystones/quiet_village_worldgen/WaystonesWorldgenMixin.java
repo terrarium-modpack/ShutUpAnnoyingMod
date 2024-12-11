@@ -15,6 +15,6 @@ public abstract class WaystonesWorldgenMixin {
             method = "registerVillage", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/apache/logging/log4j/Logger;info(Ljava/lang/String;)V", remap = false)
     )
-    private static void registerVillageInfo(final Logger instance, final String s, final Operation<Void> original) {
+    private static void registerVillage$info(final Logger instance, final String s, final Operation<Void> original) {
     }
 }

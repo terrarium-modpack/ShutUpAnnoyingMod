@@ -18,6 +18,7 @@ public abstract class RecipeManagerMixin {
                                   final @Local(ordinal = 0) RuntimeException exception) {
         if (!(exception instanceof final JsonSyntaxException syntaxException)) return true;
 
+        // a bit of a hack here
         return !syntaxException.getMessage().startsWith("Unknown item '")
                 && !syntaxException.getMessage().startsWith("Invalid or unsupported recipe type '");
     }

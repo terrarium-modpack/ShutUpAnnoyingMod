@@ -19,7 +19,7 @@ public abstract class ComputerCraftMixin {
             method = "lambda$init$15",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/server/MinecraftServer;getWorldPath(Lnet/minecraft/world/level/storage/LevelResource;)Ljava/nio/file/Path;")
     )
-    private static Path initGetWorldPath(final MinecraftServer instance, final LevelResource levelResource, final Operation<Path> original) {
+    private static Path init$getWorldPath(final MinecraftServer instance, final LevelResource levelResource, final Operation<Path> original) {
         return FabricLoader.getInstance().getConfigDir();
     }
 }

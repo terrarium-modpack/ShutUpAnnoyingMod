@@ -26,7 +26,7 @@ public abstract class ItemCollectorsClientMixin {
             method = "onBlockHighlight",
             at = @At(value = "INVOKE", target = "Lcom/supermartijn642/core/render/RenderUtils;renderBox(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/AABB;FFFZ)V")
     )
-    private static void onBlockHighlightRenderBox(final PoseStack poseStack, final AABB aabb, final float red, final float green, final float blue,
+    private static void onBlockHighlight$renderBox(final PoseStack poseStack, final AABB aabb, final float red, final float green, final float blue,
                                                   final boolean depthTest, final Operation<Void> original, final @Local(argsOnly = true) WorldRenderContext worldRenderContext) {
         final MultiBufferSource bufferSource = worldRenderContext.consumers();
         if (bufferSource == null) return;
@@ -49,7 +49,7 @@ public abstract class ItemCollectorsClientMixin {
             method = "onBlockHighlight",
             at = @At(value = "INVOKE", target = "Lcom/supermartijn642/core/render/RenderUtils;renderBoxSides(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/AABB;FFFFZ)V")
     )
-    private static void onBlockHighlightRenderBoxSides(final PoseStack poseStack, final AABB aabb, final float red, final float green, final float blue, final float alpha,
+    private static void onBlockHighlight$renderBoxSides(final PoseStack poseStack, final AABB aabb, final float red, final float green, final float blue, final float alpha,
                                                        final boolean depthTest, final Operation<Void> original, final @Local(argsOnly = true) WorldRenderContext worldRenderContext) {
         final MultiBufferSource bufferSource = worldRenderContext.consumers();
         if (bufferSource == null) return;

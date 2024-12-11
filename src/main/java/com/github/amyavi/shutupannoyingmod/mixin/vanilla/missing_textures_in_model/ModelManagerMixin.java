@@ -13,7 +13,7 @@ public abstract class ModelManagerMixin {
             method = "method_45879",
             at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;warn(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", remap = false)
     )
-    private static void warn(final Logger instance, final String s, final Object o1, final Object o2,
+    private static void loadModels$warn(final Logger instance, final String s, final Object o1, final Object o2,
                              final Operation<Void> original) {
     }
 }

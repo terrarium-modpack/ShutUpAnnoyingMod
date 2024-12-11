@@ -15,6 +15,6 @@ public abstract class UtilsMixin {
             method = "addToStructurePool", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/apache/logging/log4j/Logger;error(Ljava/lang/String;)V", remap = false)
     )
-    private static void registerVillageInfo(final Logger instance, final String s, final Operation<Void> original) {
+    private static void addToStructurePool$error(final Logger instance, final String s, final Operation<Void> original) {
     }
 }

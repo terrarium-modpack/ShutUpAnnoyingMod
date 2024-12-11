@@ -11,14 +11,12 @@ import java.io.IOException;
 import java.net.http.HttpResponse;
 import java.util.Map;
 
-// TODO: figure out a way to make it load only if cosmetics is loaded
-// (since other mods use it aswell unfortunately)
-
-@RequiresMod("estrogen")
+@SuppressWarnings("UnstableApiUsage")
+@RequiresMod("com_teamresourceful_resourceful-cosmetics-4j")
 @Mixin(CosmeticsHttp.class)
 public abstract class CosmeticsHttpMixin {
     @Inject(
-            method = "get(Ljava/lang/String;Ljava/util/Map;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/net/http/HttpResponse;", remap = false,
+            method = "get*", remap = false,
             at = @At("HEAD")
     )
     private<T> void get(final String path, final Map<String, String> headers, final HttpResponse.BodyHandler<T> handler,
@@ -27,7 +25,7 @@ public abstract class CosmeticsHttpMixin {
     }
 
     @Inject(
-            method = "post(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/net/http/HttpResponse;", remap = false,
+            method = "post*", remap = false,
             at = @At("HEAD")
     )
     private<T> void post(final String path, final Map<String, String> headers, final String body, final HttpResponse.BodyHandler<T> handler,

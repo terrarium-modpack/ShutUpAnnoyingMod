@@ -20,7 +20,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(value = ModItems.class, remap = false)
 public abstract class ModItemsMixin {
     @Inject(method = "init", at = @At("TAIL"))
-    private static void init(final CallbackInfo ci) {
+    private static void init$tail(final CallbackInfo ci) {
         final Block backpackBlock = (Block) DataHolder.modMap(TravelersBackpack.MODID).get("block");
         final Item backpackItem = new TravelersBackpackItem(backpackBlock,
                 new ResourceLocation(Blahaj.MOD_ID, "textures/model/blahaj_backpack.png"));

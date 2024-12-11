@@ -15,6 +15,6 @@ public abstract class BlockRegistryMixin {
             method = "lambda$registerPlacards$31", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;info(Ljava/lang/String;)V", ordinal = 0, remap = false)
     )
-    private static void registerPlacards(final Logger instance, final String s, final Operation<Void> original) {
+    private static void registerPlacards$info(final Logger instance, final String s, final Operation<Void> original) {
     }
 }

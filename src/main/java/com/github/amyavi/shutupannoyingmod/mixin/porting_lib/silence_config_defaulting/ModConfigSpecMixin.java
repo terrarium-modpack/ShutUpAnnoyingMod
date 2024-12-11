@@ -1,4 +1,4 @@
-package com.github.amyavi.shutupannoyingmod.mixin.porting_lib.config_changes;
+package com.github.amyavi.shutupannoyingmod.mixin.porting_lib.silence_config_defaulting;
 
 import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
@@ -16,14 +16,14 @@ public abstract class ModConfigSpecMixin {
             method = "setConfig", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/apache/logging/log4j/Logger;warn(Ljava/lang/String;Ljava/lang/Object;)V", remap = false)
     )
-    private void setConfigWarn(final Logger instance, final String s, final Object o, final Operation<Void> original) {
+    private void setConfig$warn(final Logger instance, final String s, final Object o, final Operation<Void> original) {
     }
 
     @WrapOperation(
             method = "lambda$setConfig$0", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/apache/logging/log4j/Logger;warn(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V", remap = false)
     )
-    private static void setConfig0Warn(final Logger instance, final String s, final Object o, final Object o2,
+    private static void setConfig0$warn(final Logger instance, final String s, final Object o, final Object o2,
                                        final Object o3, final Object o4, final Operation<Void> original) {
     }
 }

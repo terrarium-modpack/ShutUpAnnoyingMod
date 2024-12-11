@@ -1,4 +1,4 @@
-package com.github.amyavi.shutupannoyingmod.mixin.cctweaked.config_changes;
+package com.github.amyavi.shutupannoyingmod.mixin.cctweaked.silence_config_defaulting;
 
 import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
@@ -15,7 +15,7 @@ public abstract class FabricConfigFileMixin {
             method = "lambda$loadConfig$1", remap = false,
             at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;warn(Ljava/lang/String;[Ljava/lang/Object;)V", remap = false)
     )
-    private static void loadConfigWarn(final Logger instance, final String s, final Object[] o,
+    private static void loadConfig$warn(final Logger instance, final String s, final Object[] o,
                                        final Operation<Void> original) {
     }
 }

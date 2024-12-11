@@ -19,15 +19,15 @@
   ],
   "mixins": [
     "blahaj.broken_travelersbackpack_integration.ModItemsMixin",
-    "cctweaked.config_changes.FabricConfigFileMixin",
+    "cctweaked.silence_config_defaulting.FabricConfigFileMixin",
     "cctweaked.global_server_config.ComputerCraftMixin",
     "createdeco.remove_placard_log.BlockRegistryMixin",
     "estrogen.destroy_cosmetics.EstrogenRendererMixin",
-    "forgeconfigapiport.config_changes.ConfigFileTypeHandlerMixin",
-    "forgeconfigapiport.config_changes.ForgeConfigSpecMixin",
+    "forgeconfigapiport.silence_config_defaulting.ConfigFileTypeHandlerMixin",
+    "forgeconfigapiport.silence_config_defaulting.ForgeConfigSpecMixin",
     "fwaystones.quiet_village_worldgen.UtilsMixin",
     "fwaystones.quiet_village_worldgen.WaystonesWorldgenMixin",
-    "porting_lib.config_changes.ModConfigSpecMixin",
+    "porting_lib.silence_config_defaulting.ModConfigSpecMixin",
     "resourcefulcosmetics.noop.CosmeticsHttpMixin",
     "vanilla.recipe_unknown.RecipeManagerMixin"
   ]

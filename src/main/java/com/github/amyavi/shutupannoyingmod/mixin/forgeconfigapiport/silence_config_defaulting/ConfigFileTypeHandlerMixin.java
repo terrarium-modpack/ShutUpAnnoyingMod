@@ -1,4 +1,4 @@
-package com.github.amyavi.shutupannoyingmod.mixin.forgeconfigapiport.config_changes;
+package com.github.amyavi.shutupannoyingmod.mixin.forgeconfigapiport.silence_config_defaulting;
 
 import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
 import net.minecraftforge.fml.config.ConfigFileTypeHandler;
