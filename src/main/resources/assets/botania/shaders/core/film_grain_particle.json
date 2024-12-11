@@ -1,5 +1,5 @@
 {
-  "__comment": "[VanillaCopy] particle.json with custom frag shader",
+  "__comment": "[VanillaCopy] particle.json with custom frag shader ---- [ShutUpAnnoyingMod] removed Sampler2 sampler",
   "blend": {
     "func": "add",
     "srcrgb": "srcalpha",

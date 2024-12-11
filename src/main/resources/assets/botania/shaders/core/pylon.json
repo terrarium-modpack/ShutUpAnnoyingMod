@@ -1,5 +1,5 @@
 {
-  "__comment": "[VanillaCopy] rendertype_entity_translucent.json with extra uniforms + own fragment shader",
+  "__comment": "[VanillaCopy] rendertype_entity_translucent.json with extra uniforms + own fragment shader ---- [ShutUpAnnoyingMod] removed Light*_Direction uniform",
   "blend": {
     "func": "add",
     "srcrgb": "srcalpha",
