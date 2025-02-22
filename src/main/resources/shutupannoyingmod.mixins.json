@@ -19,9 +19,11 @@
   ],
   "mixins": [
     "blahaj.broken_travelersbackpack_integration.ModItemsMixin",
-    "cctweaked.silence_config_defaulting.FabricConfigFileMixin",
     "cctweaked.global_server_config.ComputerCraftMixin",
+    "cctweaked.silence_config_defaulting.FabricConfigFileMixin",
     "createdeco.remove_placard_log.BlockRegistryMixin",
+    "estrogen.destroy_cosmetics.BoobHttpMixin",
+    "estrogen.destroy_cosmetics.EstrogenEventsMixin",
     "estrogen.destroy_cosmetics.EstrogenRendererMixin",
     "forgeconfigapiport.silence_config_defaulting.ConfigFileTypeHandlerMixin",
     "forgeconfigapiport.silence_config_defaulting.ForgeConfigSpecMixin",
