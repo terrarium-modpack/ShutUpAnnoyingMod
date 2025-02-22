@@ -51,7 +51,6 @@ dependencies {
     modCompileOnly(libs.emi)
 
     compileOnly(libs.blahaj) // do not remap or fabric-loom blows up
-    modCompileOnly(libs.travelersbackpack)
 }
 
 tasks.processResources {
