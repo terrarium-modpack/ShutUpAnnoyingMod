@@ -1,0 +1,22 @@
+modLoader = "lowcodefml"
+loaderVersion = "[1,)"
+license = "UNLICENSE"
+
+[[mods]]
+modId = "shutupannoyingmod"
+version = "${version}"
+displayName = "Shut Up Annoying Mod"
+description = """Fixes annoying log spam caused by mods.
+Breaks every rule of the geneva convention."""
+authors = "amyavi"
+logoFile = "assets/shutupannoyingmod/icon.png"
+
+[[mixins]]
+config = "shutupannoyingmod.mixins.json"
+
+[[dependencies.shutupannoyingmod]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${loader_version},)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,7 +1,7 @@
 package com.github.amyavi.shutupannoyingmod.mixin;
 
 import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
-import net.fabricmc.loader.api.FabricLoader;
+import net.neoforged.fml.loading.LoadingModList;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.AnnotationNode;
@@ -58,7 +58,7 @@ public final class ShutUpAnnoyingModMixinPlugin implements IMixinConfigPlugin {
                 //noinspection unchecked
                 final List<String> modIds = (List<String>) valueObject;
                 for (final String modId : modIds) {
-                    if (!FabricLoader.getInstance().isModLoaded(modId)) {
+                    if (LoadingModList.get().getModFileById(modId) == null) {
                         return false;
                     }
                 }
