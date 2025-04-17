@@ -37,7 +37,7 @@ public final class ShutUpAnnoyingModMixinPlugin implements IMixinConfigPlugin {
         final String mixinPath = mixinClassName.replace('.', '/') + ".class";
         try (final InputStream resource = ShutUpAnnoyingModMixinPlugin.class
                 .getClassLoader().getResourceAsStream(mixinPath)) {
-            if (resource == null) throw new NullPointerException("resource was null");
+            if (resource == null) throw new NullPointerException("Resource was null");
 
             final ClassReader classReader = new ClassReader(resource);
             final ClassNode classNode = new ClassNode();
