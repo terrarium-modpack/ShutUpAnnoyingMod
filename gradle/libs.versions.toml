@@ -3,11 +3,15 @@ java = "21"
 loom = "1.10.430"
 
 minecraft = "1.21.1"
-neoforge = "21.1.148"
+neoforge = "21.1.172"
+
+mekanism = "10.7.14.79"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 neoforge = { module = "net.neoforged:neoforge", version.ref = "neoforge" }
+
+mekanism = { module = "maven.modrinth:mekanism", version.ref = "mekanism" }
 
 [plugins]
 loom = { id = "dev.architectury.loom", version.ref = "loom" }

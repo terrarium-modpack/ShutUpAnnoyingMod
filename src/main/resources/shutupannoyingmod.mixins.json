@@ -7,8 +7,11 @@
     "defaultRequire": 1
   },
   "client": [
+    "vanilla.no_experimental_warning.WorldOpenFlowsMixin"
   ],
   "mixins": [
-    "neoforge.dont_correct_config.ModConfigSpecMixin"
+    "mekanism.no_alpha_warning.CommonPlayerTrackerMixin",
+    "neoforge.dont_correct_config.ModConfigSpecMixin",
+    "vanilla.no_experimental_warning.FeatureFlagsMixin"
   ]
 }
