@@ -8,6 +8,7 @@ group = "com.github.amyavi"
 
 repositories {
     maven("https://maven.neoforged.net/releases")
+    maven("https://maven.blamejared.com")
     exclusiveContent {
         forRepository { maven("https://api.modrinth.com/maven") }
         filter { includeGroup("maven.modrinth") }
@@ -19,6 +20,7 @@ dependencies {
     mappings(loom.officialMojangMappings())
 
     neoForge(libs.neoforge)
+    modImplementation(libs.jei)
     modImplementation(libs.mekanism)
 }
 

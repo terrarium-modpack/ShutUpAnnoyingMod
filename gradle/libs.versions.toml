@@ -5,12 +5,14 @@ loom = "1.10.430"
 minecraft = "1.21.1"
 neoforge = "21.1.172"
 
+jei = "19.21.1.304"
 mekanism = "10.7.14.79"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 neoforge = { module = "net.neoforged:neoforge", version.ref = "neoforge" }
 
+jei = { module = "mezz.jei:jei-1.21.1-neoforge", version.ref = "jei" }
 mekanism = { module = "maven.modrinth:mekanism", version.ref = "mekanism" }
 
 [plugins]

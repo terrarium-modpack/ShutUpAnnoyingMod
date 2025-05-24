@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import java.util.function.BooleanSupplier;
 
 @RequiresMod("mekanism")
-@Mixin(CommonPlayerTracker.class)
+@Mixin(value = CommonPlayerTracker.class, remap = false)
 public abstract class CommonPlayerTrackerMixin {
     @Redirect(method = "onPlayerLoginEvent",
             at = @At(value = "FIELD", target = "Lmekanism/common/config/GeneralConfig;enableAlphaWarning:" +

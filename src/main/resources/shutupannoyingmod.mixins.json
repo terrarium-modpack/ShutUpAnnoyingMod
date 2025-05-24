@@ -7,6 +7,7 @@
     "defaultRequire": 1
   },
   "client": [
+    "jei.noop.JustEnoughItemsClientMixin",
     "vanilla.no_experimental_warning.WorldOpenFlowsMixin"
   ],
   "mixins": [
