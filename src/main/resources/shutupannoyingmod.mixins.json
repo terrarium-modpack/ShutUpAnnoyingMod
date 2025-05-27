@@ -11,6 +11,7 @@
     "vanilla.no_experimental_warning.WorldOpenFlowsMixin"
   ],
   "mixins": [
+    "geckolib.ignore_filename_format.FileLoaderMixin",
     "mekanism.no_alpha_warning.CommonPlayerTrackerMixin",
     "neoforge.dont_correct_config.ModConfigSpecMixin",
     "vanilla.no_experimental_warning.FeatureFlagsMixin"

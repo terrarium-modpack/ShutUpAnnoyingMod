@@ -10,6 +10,10 @@ repositories {
     maven("https://maven.neoforged.net/releases")
     maven("https://maven.blamejared.com")
     exclusiveContent {
+        forRepository { maven("https://dl.cloudsmith.io/public/geckolib3/geckolib/maven") }
+        filter { includeGroup("software.bernie.geckolib") }
+    }
+    exclusiveContent {
         forRepository { maven("https://api.modrinth.com/maven") }
         filter { includeGroup("maven.modrinth") }
     }
@@ -22,6 +26,7 @@ dependencies {
     neoForge(libs.neoforge)
     modImplementation(libs.jei)
     modImplementation(libs.mekanism)
+    modImplementation(libs.geckolib)
 }
 
 tasks.processResources {
