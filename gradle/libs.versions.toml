@@ -4,6 +4,7 @@ loom = "1.10.430"
 
 minecraft = "1.21.1"
 neoforge = "21.1.172"
+mixinextras = "0.3.3-beta.1"
 
 jei = "19.21.1.304"
 mekanism = "10.7.14.79"
@@ -12,6 +13,8 @@ geckolib = "4.7.5.1"
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 neoforge = { module = "net.neoforged:neoforge", version.ref = "neoforge" }
+mixinextras-common = { module = "com.github.bawnorton.mixinsquared:mixinsquared-common", version.ref = "mixinextras" }
+mixinextras-neoforge = { module = "com.github.bawnorton.mixinsquared:mixinsquared-neoforge", version.ref = "mixinextras" }
 
 jei = { module = "mezz.jei:jei-1.21.1-neoforge", version.ref = "jei" }
 mekanism = { module = "maven.modrinth:mekanism", version.ref = "mekanism" }

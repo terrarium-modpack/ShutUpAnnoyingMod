@@ -8,6 +8,8 @@ group = "com.github.amyavi"
 
 repositories {
     maven("https://maven.neoforged.net/releases")
+    maven("https://maven.bawnorton.com/releases")
+    
     maven("https://maven.blamejared.com")
     exclusiveContent {
         forRepository { maven("https://dl.cloudsmith.io/public/geckolib3/geckolib/maven") }
@@ -24,9 +26,15 @@ dependencies {
     mappings(loom.officialMojangMappings())
 
     neoForge(libs.neoforge)
+    compileOnly(libs.mixinextras.common)
+    annotationProcessor(libs.mixinextras.common)
+    implementation(libs.mixinextras.neoforge)
+    include(libs.mixinextras.neoforge)
+
     modImplementation(libs.jei)
     modImplementation(libs.mekanism)
     modImplementation(libs.geckolib)
+    compileOnly("maven.modrinth:accessories-cc-layer:9.3.1-beta.27")
 }
 
 tasks.processResources {
