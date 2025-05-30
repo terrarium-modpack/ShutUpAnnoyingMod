@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.loom)
 }
 
-version = "2.0.1"
+version = "2.0.2"
 group = "com.github.amyavi"
 
 repositories {
@@ -34,7 +34,6 @@ dependencies {
     modImplementation(libs.jei)
     modImplementation(libs.mekanism)
     modImplementation(libs.geckolib)
-    compileOnly("maven.modrinth:accessories-cc-layer:9.3.1-beta.27")
 }
 
 tasks.processResources {
