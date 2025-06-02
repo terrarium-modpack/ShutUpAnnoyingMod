@@ -16,6 +16,10 @@ repositories {
         filter { includeGroup("software.bernie.geckolib") }
     }
     exclusiveContent {
+        forRepository { maven("https://maven.jamalam.tech/releases") }
+        filter { includeGroup("io.github.jamalam360") }
+    }
+    exclusiveContent {
         forRepository { maven("https://api.modrinth.com/maven") }
         filter { includeGroup("maven.modrinth") }
     }
@@ -34,6 +38,7 @@ dependencies {
     modImplementation(libs.jei)
     modImplementation(libs.mekanism)
     modImplementation(libs.geckolib)
+    modImplementation(libs.jamlib)
 }
 
 tasks.processResources {
