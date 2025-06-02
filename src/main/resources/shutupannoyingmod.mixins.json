@@ -14,6 +14,7 @@
     "accessories_curios_compat.dont_log_tags.TagGroupLoaderMixinMixin",
     "geckolib.ignore_filename_format.FileLoaderMixin",
     "mekanism.no_alpha_warning.CommonPlayerTrackerMixin",
+    "mekanism.holiday_first_day_only.MonthlyDateMixin",
     "neoforge.dont_correct_config.ModConfigSpecMixin",
     "vanilla.no_experimental_warning.FeatureFlagsMixin"
   ]
