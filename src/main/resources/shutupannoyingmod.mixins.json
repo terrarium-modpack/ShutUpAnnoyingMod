@@ -12,6 +12,10 @@
   ],
   "mixins": [
     "accessories_curios_compat.dont_log_tags.TagGroupLoaderMixinMixin",
+    "carryon.no_nbt_tostring.CarryOnCommonMixin",
+    "carryon.no_scripting.CarryOnCommonMixin",
+    "carryon.no_scripting.CarryOnDataMixin",
+    "carryon.no_scripting.CommonEventsMixin",
     "geckolib.ignore_filename_format.FileLoaderMixin",
     "jamlib.allow_jar_renaming.JarRenamingCheckerMixin",
     "mekanism.holiday_first_day_only.MonthlyDateMixin",

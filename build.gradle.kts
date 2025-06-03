@@ -39,6 +39,7 @@ dependencies {
     modImplementation(libs.mekanism)
     modImplementation(libs.geckolib)
     modImplementation(libs.jamlib)
+    modImplementation(libs.carryon)
 }
 
 tasks.processResources {
