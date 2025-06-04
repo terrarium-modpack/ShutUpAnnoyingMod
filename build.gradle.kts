@@ -40,6 +40,7 @@ dependencies {
     modImplementation(libs.geckolib)
     modImplementation(libs.jamlib)
     modImplementation(libs.carryon)
+    modImplementation(libs.sophisticatedcore)
 }
 
 tasks.processResources {

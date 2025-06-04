@@ -21,6 +21,12 @@
     "mekanism.holiday_first_day_only.MonthlyDateMixin",
     "mekanism.no_alpha_warning.CommonPlayerTrackerMixin",
     "neoforge.dont_correct_config.ModConfigSpecMixin",
+    "sophisticatedcore.no_config_saving.ConfigCommonMixin",
+    "sophisticatedcore.no_config_saving.ConfigCommonMixin\$EnabledItemsMixin",
+    "sophisticatedcore.no_datapack_syncing.ModPayloadsMixin",
+    "sophisticatedcore.no_datapack_syncing.SophisticatedCoreMixin",
+    "sophisticatedcore.no_datapack_syncing.TemplatePersistanceContainerMixin",
+    "sophisticatedcore.no_datapack_syncing.TemplatePersistanceControlMixin",
     "vanilla.no_experimental_warning.FeatureFlagsMixin"
   ]
 }
