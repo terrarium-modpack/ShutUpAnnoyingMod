@@ -19,7 +19,6 @@
     "geckolib.ignore_filename_format.FileLoaderMixin",
     "jamlib.allow_jar_renaming.JarRenamingCheckerMixin",
     "mekanism.holiday_first_day_only.MonthlyDateMixin",
-    "mekanism.no_alpha_warning.CommonPlayerTrackerMixin",
     "neoforge.dont_correct_config.ModConfigSpecMixin",
     "sophisticatedcore.no_config_saving.ConfigCommonMixin",
     "sophisticatedcore.no_config_saving.ConfigCommonMixin\$EnabledItemsMixin",

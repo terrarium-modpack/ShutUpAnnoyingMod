@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.loom)
 }
 
-version = "2.0.5"
+version = "2.0.6"
 group = "com.github.amyavi"
 
 repositories {
