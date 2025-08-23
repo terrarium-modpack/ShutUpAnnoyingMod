@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.loom)
 }
 
-version = "2.0.6"
+version = "2.0.7"
 group = "com.github.amyavi"
 
 repositories {
@@ -23,6 +23,10 @@ repositories {
         forRepository { maven("https://api.modrinth.com/maven") }
         filter { includeGroup("maven.modrinth") }
     }
+    exclusiveContent {
+        forRepository { maven("https://cursemaven.com") }
+        filter { includeGroup("curse.maven") }
+    }
 }
 
 dependencies {
@@ -30,10 +34,10 @@ dependencies {
     mappings(loom.officialMojangMappings())
 
     neoForge(libs.neoforge)
-    compileOnly(libs.mixinextras.common)
-    annotationProcessor(libs.mixinextras.common)
-    implementation(libs.mixinextras.neoforge)
-    include(libs.mixinextras.neoforge)
+    compileOnly(libs.mixinsquared.common)
+    annotationProcessor(libs.mixinsquared.common)
+    implementation(libs.mixinsquared.neoforge)
+    include(libs.mixinsquared.neoforge)
 
     modImplementation(libs.jei)
     modImplementation(libs.mekanism)
@@ -41,6 +45,7 @@ dependencies {
     modImplementation(libs.jamlib)
     modImplementation(libs.carryon)
     modImplementation(libs.sophisticatedcore)
+    modImplementation(libs.alltheleaks)
 }
 
 tasks.processResources {

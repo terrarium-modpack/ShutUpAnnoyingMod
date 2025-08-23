@@ -1,10 +1,10 @@
 [versions]
 java = "21"
-loom = "1.10.430"
+loom = "1.11.439"
 
 minecraft = "1.21.1"
-neoforge = "21.1.172"
-mixinextras = "0.3.3-beta.1"
+neoforge = "21.1.203"
+mixinsquared = "0.3.3-beta.1"
 
 jei = "19.22.1.316"
 mekanism = "10.7.15.81"
@@ -12,12 +12,13 @@ geckolib = "4.7.6"
 jamlib = "1.3.5+1.21.1"
 carryon = "2.2.2.11"
 sophisticatedcore = "1.21.1-1.3.64.1090"
+alltheleaks = "6916165"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 neoforge = { module = "net.neoforged:neoforge", version.ref = "neoforge" }
-mixinextras-common = { module = "com.github.bawnorton.mixinsquared:mixinsquared-common", version.ref = "mixinextras" }
-mixinextras-neoforge = { module = "com.github.bawnorton.mixinsquared:mixinsquared-neoforge", version.ref = "mixinextras" }
+mixinsquared-common = { module = "com.github.bawnorton.mixinsquared:mixinsquared-common", version.ref = "mixinsquared" }
+mixinsquared-neoforge = { module = "com.github.bawnorton.mixinsquared:mixinsquared-neoforge", version.ref = "mixinsquared" }
 
 jei = { module = "mezz.jei:jei-1.21.1-neoforge", version.ref = "jei" }
 mekanism = { module = "maven.modrinth:mekanism", version.ref = "mekanism" }
@@ -25,6 +26,7 @@ geckolib = { module = "software.bernie.geckolib:geckolib-neoforge-1.21.1", versi
 jamlib = { module = "io.github.jamalam360:jamlib", version.ref = "jamlib" }
 carryon = { module = "tschipp.carryon:carryon-neoforge-1.21.1", version.ref = "carryon" }
 sophisticatedcore = { module = "maven.modrinth:sophisticated-core", version.ref = "sophisticatedcore" }
+alltheleaks = { module = "curse.maven:alltheleaks-1091339", version.ref = "alltheleaks" }
 
 [plugins]
 loom = { id = "dev.architectury.loom", version.ref = "loom" }

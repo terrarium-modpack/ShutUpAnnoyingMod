@@ -12,6 +12,7 @@
   ],
   "mixins": [
     "accessories_curios_compat.dont_log_tags.TagGroupLoaderMixinMixin",
+    "alltheleaks.commands_require_op.ATLCommandsMixin",
     "carryon.no_nbt_tostring.CarryOnCommonMixin",
     "carryon.no_scripting.CarryOnCommonMixin",
     "carryon.no_scripting.CarryOnDataMixin",
