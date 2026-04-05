@@ -20,6 +20,10 @@ repositories {
         filter { includeGroup("io.github.jamalam360") }
     }
     exclusiveContent {
+        forRepository { maven("https://dl.cloudsmith.io/public/klikli-dev/mods/maven") }
+        filter { includeGroup("com.klikli_dev") }
+    }
+    exclusiveContent {
         forRepository { maven("https://api.modrinth.com/maven") }
         filter { includeGroup("maven.modrinth") }
     }
@@ -46,6 +50,7 @@ dependencies {
     modImplementation(libs.carryon)
     modImplementation(libs.sophisticatedcore)
     modImplementation(libs.alltheleaks)
+    modImplementation(libs.theurgy)
 }
 
 tasks.processResources {

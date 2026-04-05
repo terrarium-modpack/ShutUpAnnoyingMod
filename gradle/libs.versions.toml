@@ -13,6 +13,7 @@ jamlib = "1.3.6+1.21.1"
 carryon = "2.2.4.4"
 sophisticatedcore = "1.21.1-1.4.18.1629"
 alltheleaks = "7719009"
+theurgy = "1.71.0"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -27,6 +28,7 @@ jamlib = { module = "io.github.jamalam360:jamlib", version.ref = "jamlib" }
 carryon = { module = "tschipp.carryon:carryon-neoforge-1.21.1", version.ref = "carryon" }
 sophisticatedcore = { module = "maven.modrinth:sophisticated-core", version.ref = "sophisticatedcore" }
 alltheleaks = { module = "curse.maven:alltheleaks-1091339", version.ref = "alltheleaks" }
+theurgy = { module = "com.klikli_dev:theurgy-1.21.1-neoforge", version.ref = "theurgy" }
 
 [plugins]
 loom = { id = "dev.architectury.loom", version.ref = "loom" }

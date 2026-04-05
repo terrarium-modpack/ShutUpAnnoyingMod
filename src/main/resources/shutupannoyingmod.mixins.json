@@ -24,7 +24,8 @@
     "sophisticatedcore.no_datapack_syncing.SophisticatedCoreMixin",
     "sophisticatedcore.no_datapack_syncing.TemplatePersistanceContainerMixin",
     "sophisticatedcore.no_datapack_syncing.TemplatePersistanceControlMixin",
+    "theurgy.no_recipe_choking.MonitoredItemStackHandlerMixin",
     "vanilla.no_experimental_warning.FeatureFlagsMixin"
   ],
-  "injectors": { "defaultRequire": 1 },
+  "injectors": { "defaultRequire": 1 }
 }
