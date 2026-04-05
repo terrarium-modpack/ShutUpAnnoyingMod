@@ -1,5 +1,6 @@
 package com.github.amyavi.shutupannoyingmod.mixin.sophisticatedcore.no_datapack_syncing;
 
+import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -11,6 +12,7 @@ import net.p3pp3rf1y.sophisticatedcore.init.ModPayloads;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
+@RequiresMod("sophisticatedcore")
 @Mixin(value = ModPayloads.class, remap = false)
 public abstract class ModPayloadsMixin {
     @WrapOperation(method = "registerPayloads",

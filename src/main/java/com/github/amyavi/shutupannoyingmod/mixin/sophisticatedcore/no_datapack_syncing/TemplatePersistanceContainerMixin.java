@@ -1,5 +1,6 @@
 package com.github.amyavi.shutupannoyingmod.mixin.sophisticatedcore.no_datapack_syncing;
 
+import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.nbt.CompoundTag;
@@ -12,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.Collections;
 import java.util.Map;
 
+@RequiresMod("sophisticatedcore")
 @Mixin(value = TemplatePersistanceContainer.class, remap = false)
 public abstract class TemplatePersistanceContainerMixin {
     @Inject(method = "exportTemplate", cancellable = true, at = @At(value = "HEAD"))

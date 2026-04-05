@@ -3,9 +3,6 @@
   "required": true,
   "package": "com.github.amyavi.shutupannoyingmod.mixin",
   "plugin": "com.github.amyavi.shutupannoyingmod.mixin.ShutUpAnnoyingModMixinPlugin",
-  "injectors": {
-    "defaultRequire": 1
-  },
   "client": [
     "jei.noop.JustEnoughItemsClientMixin",
     "vanilla.no_experimental_warning.WorldOpenFlowsMixin"
@@ -28,5 +25,6 @@
     "sophisticatedcore.no_datapack_syncing.TemplatePersistanceContainerMixin",
     "sophisticatedcore.no_datapack_syncing.TemplatePersistanceControlMixin",
     "vanilla.no_experimental_warning.FeatureFlagsMixin"
-  ]
+  ],
+  "injectors": { "defaultRequire": 1 },
 }

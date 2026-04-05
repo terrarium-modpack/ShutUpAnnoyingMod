@@ -52,7 +52,8 @@ tasks.processResources {
     val properties = mapOf(
         "version" to version,
         "java_version" to libs.versions.java.get(),
-        "loader_version" to libs.versions.neoforge.get()
+        "loader_version" to libs.versions.neoforge.get(),
+        "minecraft_version" to libs.versions.minecraft.get()
     )
 
     inputs.properties(properties)

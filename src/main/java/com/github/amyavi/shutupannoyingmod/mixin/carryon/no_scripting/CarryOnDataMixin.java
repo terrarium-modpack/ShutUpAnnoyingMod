@@ -5,6 +5,7 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.nbt.CompoundTag;
+import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -27,7 +28,7 @@ public abstract class CarryOnDataMixin {
 
     @ModifyExpressionValue(method = "getNbt",
             at = @At(value = "FIELD", target = "Ltschipp/carryon/common/carry/CarryOnData;activeScript" +
-                    ":Ltschipp/carryon/common/scripting/CarryOnScript;", remap = false))
+                ":Ltschipp/carryon/common/scripting/CarryOnScript;", remap = false, opcode = Opcodes.GETFIELD))
     private CarryOnScript getNbt$activeScript(final CarryOnScript original) {
         return null;
     }

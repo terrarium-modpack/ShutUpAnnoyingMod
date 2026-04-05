@@ -1,19 +1,22 @@
 package com.github.amyavi.shutupannoyingmod.mixin.sophisticatedcore.no_datapack_syncing;
 
+import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.p3pp3rf1y.sophisticatedcore.client.gui.TemplatePersistanceControl;
 import net.p3pp3rf1y.sophisticatedcore.client.gui.controls.WidgetBase;
+import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Slice;
 
+@RequiresMod("sophisticatedcore")
 @Mixin(value = TemplatePersistanceControl.class, remap = false)
 public abstract class TemplatePersistanceControlMixin {
     @WrapOperation(method = "<init>",
             slice = @Slice(
                     from = @At(value = "FIELD", target = "Lnet/p3pp3rf1y/sophisticatedcore/client/gui/TemplatePersistanceControl;" +
-                            "exportInput:Lnet/p3pp3rf1y/sophisticatedcore/client/gui/controls/TextBox;")),
+                        "exportInput:Lnet/p3pp3rf1y/sophisticatedcore/client/gui/controls/TextBox;", opcode = Opcodes.PUTFIELD)),
             at = @At(value = "INVOKE", target = "Lnet/p3pp3rf1y/sophisticatedcore/client/gui/TemplatePersistanceControl;" +
                     "addChild(Lnet/p3pp3rf1y/sophisticatedcore/client/gui/controls/WidgetBase;)" +
                     "Lnet/p3pp3rf1y/sophisticatedcore/client/gui/controls/WidgetBase;"))

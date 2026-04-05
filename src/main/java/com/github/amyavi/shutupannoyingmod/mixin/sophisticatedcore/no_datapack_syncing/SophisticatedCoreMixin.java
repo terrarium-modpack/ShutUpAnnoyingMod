@@ -1,5 +1,6 @@
 package com.github.amyavi.shutupannoyingmod.mixin.sophisticatedcore.no_datapack_syncing;
 
+import com.github.amyavi.shutupannoyingmod.annotation.RequiresMod;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.p3pp3rf1y.sophisticatedcore.SophisticatedCore;
 import org.spongepowered.asm.mixin.Mixin;
@@ -7,6 +8,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+@RequiresMod("sophisticatedcore")
 @Mixin(value = SophisticatedCore.class, remap = false)
 public abstract class SophisticatedCoreMixin {
     // Only used for syncing

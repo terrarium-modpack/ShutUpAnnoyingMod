@@ -20,3 +20,10 @@ type = "required"
 versionRange = "[${loader_version},)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.shutupannoyingmod]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version}"
+ordering = "NONE"
+side = "BOTH"
